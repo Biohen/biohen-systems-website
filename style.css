@@ -1,41 +1,49 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #ffffff;
-  color: #222;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
-  padding: 15px 30px;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .logo {
-  height: 45px;
-  margin-right: 20px;
+  height: 42px;
 }
 
 .menu a {
   text-decoration: none;
-  color: #0055aa;
-  margin-right: 15px;
+  margin-left: 18px;
+  color: #2563eb;
   font-weight: 500;
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  color: #1e40af;
 }
 
+/* CONTENIDO */
 main {
-  padding: 40px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 h1 {
-  color: #111;
+  font-size: 36px;
+  margin-bottom: 16px;
 }
 
 p {
+  font-size: 18px;
   line-height: 1.7;
+  color: #374151;
 }
