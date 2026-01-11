@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f9fafb;
+  background-color: #ffffff;
   color: #1f2937;
 }
 
@@ -10,18 +10,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 32px;
+  padding: 16px 32px;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .logo {
-  height: 42px;
+  height: 40px;
 }
 
 .menu a {
+  margin-left: 20px;
   text-decoration: none;
-  margin-left: 18px;
   color: #2563eb;
   font-weight: 500;
 }
@@ -30,20 +30,49 @@ body {
   color: #1e40af;
 }
 
-/* CONTENIDO */
-main {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* HERO */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 16px;
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #374151;
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #f97316;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
 }
