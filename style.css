@@ -76,3 +76,50 @@ body {
 .btn-primary:hover {
   background-color: #ea580c;
 }
+
+/* ===== CONTENEDOR DE LECTURA ===== */
+.container{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.container p{
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.container h1,
+.container h2,
+.container h3{
+  margin: 18px 0 10px;
+  line-height: 1.25;
+}
+
+/* ===== NAVBAR RESPONSIVE (móvil) ===== */
+@media (max-width: 640px) {
+  .navbar{
+    padding: 12px 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo{
+    height: 34px;
+  }
+
+  .menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    justify-content: center;
+  }
+
+  .menu a{
+    margin-left: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #f3f4f6;   /* ← aquí sí va */
+  }
+}
