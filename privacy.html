@@ -6,36 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar">
-  <img src="logo.png" alt="BioHen Systems Logo" class="logo">
+<!-- ===== NAVBAR PRO ===== -->
+<header class="navbar">
+  <div class="nav-inner">
 
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="apps.html">Apps</a>
-    <a href="about.html">Acerca de</a>
-    <a href="contact.html">Contacto</a>
-    <a href="privacy.html">Privacidad</a>
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+      <span class="brand-name">Biohen Systems</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">Acerca de</a>
+      <a href="contact.html">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+
   </div>
-</nav>     
-<main>
-<h1>Política de Privacidad</h1>
+</header>
 
-<p>
-Biohen Systems respeta la privacidad de los usuarios.
-</p>
+<!-- ===== CONTENIDO ===== -->
+<main class="container">
 
-<p>
-Las aplicaciones desarrolladas por Biohen Systems no recopilan,
-almacenan ni comparten información personal identificable sin el
-consentimiento del usuario.
-</p>
+  <h1>Política de Privacidad</h1>
 
-<p>
-Si tienes preguntas sobre la política de privacidad, puedes
-contactarnos por correo electrónico.
-</p>
+  <p>
+    Biohen Systems respeta la privacidad de los usuarios.
+  </p>
+
+  <p>
+    Las aplicaciones desarrolladas por Biohen Systems no recopilan,
+    almacenan ni comparten información personal identificable sin el
+    consentimiento del usuario.
+  </p>
+
+  <p>
+    Si tienes preguntas sobre la política de privacidad, puedes
+    contactarnos por correo electrónico.
+  </p>
+
 </main>
+
+<!-- ===== SCRIPT MENU MOVIL ===== -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
