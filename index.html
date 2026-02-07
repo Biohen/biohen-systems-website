@@ -6,28 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav class="navbar">
-  <img src="logo.png" alt="Biohen Systems Logo" class="logo">
 
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="apps.html">Apps</a>
-    <a href="about.html">Acerca de</a>
-    <a href="contact.html">Contacto</a>
-    <a href="privacy.html">Privacidad</a>
+<body>
+
+<!-- ===== NAVBAR PRO ===== -->
+<header class="navbar">
+  <div class="nav-inner">
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+      <span class="brand-name">Biohen Systems</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">Acerca de</a>
+      <a href="contact.html">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+
   </div>
-</nav> 
+</header>
+
+<!-- ===== HERO ===== -->
 <main class="hero">
   <div class="hero-content">
-    <h1>Biohen systems</h1>
+    <h1>Biohen Systems</h1>
+
     <p>
-      Desarrollamos aplicaciones y herramientas digitales enfocadas en
-      educación, consulta y apoyo al usuario.
+      Aplicaciones y herramientas digitales enfocadas en educación,
+      consulta informativa y utilidades de apoyo para distintos tipos de usuario.
     </p>
+
     <a href="apps.html" class="btn-primary">Ver aplicaciones</a>
   </div>
 </main>
+
+<!-- ===== SCRIPT MENU MOVIL ===== -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
