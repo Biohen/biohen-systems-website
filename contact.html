@@ -6,29 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar">
-  <img src="logo.png" alt="BioHen Systems Logo" class="logo">
+<!-- ===== NAVBAR PRO ===== -->
+<header class="navbar">
+  <div class="nav-inner">
 
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="apps.html">Apps</a>
-    <a href="about.html">Acerca de</a>
-    <a href="contact.html">Contacto</a>
-    <a href="privacy.html">Privacidad</a>
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+      <span class="brand-name">Biohen Systems</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">Acerca de</a>
+      <a href="contact.html">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+
   </div>
-</nav>  
-<main> 
-<h1>Contacto</h1>
+</header>
 
-<p>
-Si tienes preguntas, sugerencias o necesitas soporte, puedes escribirnos a:
-</p>
+<!-- ===== CONTENIDO ===== -->
+<main class="container">
 
-<p>
-<strong>biohensystems@gmail.com</strong>
-</p>
- </main> 
+  <h1>Contacto</h1>
+
+  <p>
+    Si tienes preguntas, sugerencias o necesitas soporte, puedes escribirnos a:
+  </p>
+
+  <p>
+    <strong>biohensystems@gmail.com</strong>
+  </p>
+
+</main>
+
+<!-- ===== SCRIPT MENU MOVIL ===== -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
