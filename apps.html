@@ -6,31 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar">
-  <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+<!-- ===== NAVBAR PRO ===== -->
+<header class="navbar">
+  <div class="nav-inner">
 
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="apps.html">Apps</a>
-    <a href="about.html">Acerca de</a>
-    <a href="contact.html">Contacto</a>
-    <a href="privacy.html">Privacidad</a>
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+      <span class="brand-name">Biohen Systems</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">Acerca de</a>
+      <a href="contact.html">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+
   </div>
-</nav>
-<main>
+</header>
 
-<h1>Nuestras aplicaciones</h1>
+<!-- ===== CONTENIDO ===== -->
+<main class="container">
 
-<p>
-Aquí encontrarás información sobre las aplicaciones desarrolladas por Biohen Systems.
-</p>
+  <h1>Nuestras aplicaciones</h1>
 
-<ul>
-  <li>Aplicaciones educativas</li>
-  <li>Herramientas de consulta</li>
-</ul>
+  <p>
+    En esta sección se presentarán las aplicaciones y herramientas digitales
+    desarrolladas por Biohen Systems. Nuestro enfoque está orientado a crear
+    soluciones prácticas, claras y fáciles de usar para cálculo, estimación
+    y consulta informativa en diferentes áreas.
+  </p>
+
+  <p>
+    Cada aplicación está diseñada con interfaces simples, resultados
+    comprensibles y flujos de uso rápidos, priorizando la accesibilidad y la
+    utilidad para estudiantes, profesionales y usuarios generales. El catálogo
+    de aplicaciones continuará ampliándose de forma progresiva.
+  </p>
+
+  <p>
+    Próximamente se agregarán fichas individuales con descripción de funciones,
+    capturas de pantalla y enlaces oficiales de descarga cuando estén
+    disponibles en las respectivas tiendas de aplicaciones.
+  </p>
+
+  <ul>
+    <li>Aplicaciones educativas</li>
+    <li>Herramientas de consulta y cálculo</li>
+    <li>Utilidades digitales especializadas</li>
+  </ul>
+
 </main>
+
+<!-- ===== SCRIPT MENU MOVIL ===== -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
