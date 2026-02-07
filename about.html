@@ -5,25 +5,38 @@
   <title>Acerca de - Biohen Systems</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-<nav class="navbar">
-  <img src="logo.png" alt="BioHen Systems Logo" class="logo">
 
-  <div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="apps.html">Apps</a>
-    <a href="about.html">Acerca de</a>
-    <a href="contact.html">Contacto</a>
-    <a href="privacy.html">Privacidad</a>
+<!-- ===== NAVBAR PRO ===== -->
+<header class="navbar">
+  <div class="nav-inner">
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Biohen Systems Logo" class="logo">
+      <span class="brand-name">Biohen Systems</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">Acerca de</a>
+      <a href="contact.html">Contacto</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+
   </div>
-</nav>
+</header>
 
-<main>
-<h1>Acerca de Biohen Systems</h1>
+<!-- ===== CONTENIDO ===== -->
+<main class="container">
 
- <p>
+  <h1>Acerca de Biohen Systems</h1>
+
+  <p>
     Biohen Systems es un proyecto enfocado en el desarrollo de aplicaciones
     y soluciones digitales orientadas a la educación, la consulta informativa
     y el apoyo técnico en distintas áreas de conocimiento.
@@ -54,7 +67,15 @@
     nuevos módulos y utilidades prácticas que aporten valor real
     a estudiantes, profesionales y usuarios en general.
   </p>
-</section>
+
 </main>
+
+<!-- ===== SCRIPT MENU MOVIL ===== -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
