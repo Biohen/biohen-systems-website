@@ -1,3 +1,5 @@
+/* ===== BASE ===== */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -5,32 +7,78 @@ body {
   color: #1f2937;
 }
 
-/* NAVBAR */
-.navbar {
+/* ===== NAVBAR PRO ===== */
+
+.navbar{
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 32px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
 }
 
-.logo {
-  height: 40px;
+/* marca */
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
-.menu a {
-  margin-left: 20px;
+.logo{
+  height: 36px;
+}
+
+.brand-name{
+  font-weight: 600;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+/* menu desktop */
+
+.menu{
+  display: flex;
+  gap: 22px;
+}
+
+.menu a{
   text-decoration: none;
   color: #2563eb;
   font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background .15s, color .15s;
 }
 
-.menu a:hover {
+.menu a:hover{
+  background: #eff6ff;
   color: #1e40af;
 }
 
-/* HERO */
+/* boton hamburguesa */
+
+.menu-toggle{
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+/* ===== HERO ===== */
+
 .hero {
   min-height: 75vh;
   display: flex;
@@ -63,6 +111,8 @@ body {
   margin-bottom: 30px;
 }
 
+/* ===== BOTONES ===== */
+
 .btn-primary {
   display: inline-block;
   padding: 14px 28px;
@@ -71,6 +121,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
+  transition: background .15s;
 }
 
 .btn-primary:hover {
@@ -78,6 +129,7 @@ body {
 }
 
 /* ===== CONTENEDOR DE LECTURA ===== */
+
 .container{
   max-width: 920px;
   margin: 0 auto;
@@ -96,30 +148,44 @@ body {
   line-height: 1.25;
 }
 
-/* ===== NAVBAR RESPONSIVE (móvil) ===== */
-@media (max-width: 640px) {
-  .navbar{
-    padding: 12px 14px;
-    flex-wrap: wrap;
-    gap: 10px;
+/* ===== MOBILE ===== */
+
+@media (max-width: 720px){
+
+  .menu-toggle{
+    display: block;
   }
 
-  .logo{
-    height: 34px;
+  .brand-name{
+    display: none;
   }
 
   .menu{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 14px;
-    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    flex-direction: column;
+    gap: 0;
+    display: none;
   }
 
   .menu a{
-    margin-left: 0;
-    padding: 8px 10px;
-    border-radius: 10px;
-    background: #f3f4f6;   /* ← aquí sí va */
+    padding: 14px 18px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .menu.show{
+    display: flex;
+  }
+
+  .hero-content h1{
+    font-size: 34px;
+  }
+
+  .hero-content p{
+    font-size: 18px;
   }
 }
